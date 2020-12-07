@@ -65,6 +65,7 @@ I had quite some difficulties with this project. The main problem was that I too
     1. Repeat until manage.py works: Try to run the app, see which packages are missing and install all missing packages
     
 * Login for /admin = Username: "admin"; password="heuteistmontag"
+* for the actual deployment of the apps, there are some extra steps and files needed (did not work flawlessly for me either)
 
 ## **Resources:**
 * Django: [Basic series by Corey Schaefer](https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=1)
