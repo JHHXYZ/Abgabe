@@ -31,13 +31,18 @@ While one of the assignment requirement was for the project to be developed with
 **The application offers**
 * styled restaurant pages with basic informations (home, menu, contact, about, order)
 * the customers the options to online reserve a table, order takeout and pay
-* the admin an dashboard where he can create, read, update and delete items from the application
+* the admin an dashboard where one can create, read, update and delete items from the application
 
 *(Note: Names, addresses and locations were anonymized for privacy reasons.)* 
 
+### Technical aspects
+* reservation email is send via smtp´s gmail server
+* Payment feature was implemented with AJAX
+* data is stored with django´s default SQLlite database
+* the admin dashboard is created with django´s default admin site
 
 ## Afterthoughts
-All in all I
+I had quite some difficulties with this project. The main problem was that I took quite a long pause from programming after the lectures ended and hence also forgot many things. This led to me being constantly frustrated because I had to look a lot of things up again. This in turn led to me losing motivation and at this point I just wanted to be done with this project. 
 
 ## How to launch the App
 
@@ -55,7 +60,7 @@ All in all I
 ### Django-App
 1. Download the "django_app" folder and unpack it
 1. Open the folder in your IDE 
-1. Try to run manage.py (You will most likely get an error because of missing packages)
+1. Try to run manage.py in windows powershell (You will most likely get an error because of missing packages)
     1. Repeat until manage.py works: Try to run the app, see which packages are missing and install all missing packages
     
 * Login for /admin = Username: "admin"; password="heuteistmontag"
