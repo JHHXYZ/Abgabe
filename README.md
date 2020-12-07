@@ -40,9 +40,10 @@ While one of the assignment requirement was for the project to be developed with
 * Payment feature was implemented with AJAX
 * data is stored with django´s default SQLlite database
 * the admin dashboard is created with django´s default admin site
+* most of the actual code is very messy since I´ve added and deleted things very irregularly to the point I dont even know where some things are
 
 ## Afterthoughts
-I had quite some difficulties with this project. The main problem was that I took quite a long pause from programming after the lectures ended and hence also forgot many things. This led to me being constantly frustrated because I had to look a lot of things up again. This in turn led to me losing motivation and at this point I just wanted to be done with this project. 
+I had quite some difficulties with this project. The main problem was that I took quite a long pause from programming after the lectures ended and hence also forgot many things. This led to me being constantly frustrated because I had to look a lot of things up again. This in turn led to me losing motivation and at this point I just wanted to be done with this project.
 
 ## How to launch the App
 
