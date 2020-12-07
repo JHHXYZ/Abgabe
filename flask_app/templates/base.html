@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>China Restaurant Hong Yun</title>
+    <link rel="icon" href="http://logok.org/wp-content/uploads/2014/05/China-Unicom-Chinese-knot-logo-880x660.png">
+    
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!---Alertbar--->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+          {% include 'navigation.html' %}
+          {% block content %}
+          {% endblock %}
+          {% include 'footer.html' %}
+
+  <!---- Google Maps API (Javascript) ------>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YourGoogleAPI_Key&callback=initMap&libraries=&v=weekly"
+      defer></script>
+  <script>
+    let map;
+
+    function initMap() {
+      const myLatLng = { lat: 50.820, lng: 6.999 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: myLatLng,
+      });
+      new google.maps.Marker({
+        position: myLatLng,
+        map,
+        title: "Hier ist Restaurant Online!",
+      });
+    }
+
+    var slideIndex = 0;
+    showSlides();
+
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 3500);
+            }
+  </script>
+</body>
+</html>

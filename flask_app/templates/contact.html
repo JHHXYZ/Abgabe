@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block content %}
+    
+  <div class="alert alert-info alert-dismissible" role="alert">
+      <button aria-label="Close" class="close" data-dismiss="alert" type="button"><span aria-hidden="true">×</span></button>
+        <p>Bitte beachten Sie die neusten Regelungen aufgrund von <a href="{{ url_for('covid') }}"> COVID19</a>.</p>
+  </div>
+  
+ <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-12 text-center">
+          <h1 class="header-h">Tisch reservieren</h1>
+          <p class="header-p">Bitte beachten Sie bei Reservierungen die Regelungen im Zusammenhang mit Covid. 
+        </div>
+      </div>
+      <div class="row msg-row">
+        <div class="col-md-4 col-sm-4 mr-15">
+          <div class="media-2">
+            <div class="media-body">
+              <h4 class="dark-blue regular">Telefonnummer</h4>
+              <p class="light-blue regular alt-p">Telefonisch reservieren <br><span class="contacts-sp"> ***** *** ***</span></p>
+            </div>
+          </div>
+          <div class="media-2">
+            <div class="media-body">
+              <h4 class="dark-blue regular">Öffnungszeiten</h4>
+              <p class="light-blue regular alt-p"> Montag bis Sonntag <br>
+               11.00 - 15:00 <br> 17.30 - 21.30</p>
+              <p class="light-blue regular alt-p">
+                Dienstag ab 17.30 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+          <form action="" method="post" role="form" class=contact-form>
+            <div id="sendmessage">Ihre Reservierung wurde erkannt. In Kürze erhalten Sie eine Bestätigun per Email.</div>
+            <div id="errormessage"></div>
+            <div class="col-md-6 col-sm-6 contact-form pad-form">
+              <div class="form-group label-floating is-empty">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:3" data-msg="Ihr Name musst mindestens 3 Zeichen lang sein" />
+                <div class="validation"></div>
+              </div>
+
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Datum" data-rule-dateISO="true" data-msg="Bitte geben Sie ein Datum ein" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form pad-form">
+              <div class="form-group">
+                <input type="email" class="form-control label-floating is-empty" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Bitte geben Sie eine gültige Email ein." />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="Zeit" data-rule="required" data-msg="Bitte füllen Sie dieses Feld aus" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="Telefonnummer" data-rule="required" data-msg="Bitte geben Sie eine Telefonnummer an" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control label-floating is-empty" name="people" id="people" placeholder="Personen" data-rule-lettersonly="true" data-msg="Bitte geben Sie die Anzahl an Personen an" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="col-md-12 contact-form">
+              <div class="form-group label-floating is-empty">
+                <textarea class="form-control" name="nachricht" id="nachricht" rows="5" rows="3" data-rule="required" data-msg="Fragen oder Anmerkungen bitte hier reinschreiben." placeholder="Anmerkungen"></textarea>
+                <div class="validation"></div>
+              </div>
+            </div>
+
+            <div class="col-md-12 btnpad">
+              <div class="contacts-btn-pad">
+                <button class="contacts-btn">Reservieren</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-12">
+            <br><br>
+              <div id="map"> Anfahrt</div>
+      </div>
+    </div>
+  </p>
+</div>
+</div>
+</div>
+  </section>
+
+
+
+{% endblock content %}

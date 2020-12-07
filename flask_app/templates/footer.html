@@ -1,0 +1,65 @@
+  	<footer class="footer-sec mt-5 mx-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+                <div class="footer-logo">
+                    <h3 class="text-white">Restaurant Online</h3>
+                </div>
+                <br><br>
+                <h4> Asiatische Küche </h4>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+                <h4>Kontakt</h4>
+                <div class="footer-address">
+                    <p>Musterstraße 17</p>
+                    <span>Telefon: ***** *** ***</span>
+                    <span>email: Restaurant@Online.com</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 footer-widget">
+                <h4> Links</h4>
+                <ul>
+                    <li><a href="{{ url_for('menu') }}">Menü</a></li>
+                    <li><a href="https://lexical-sol-294408.ew.r.appspot.com/">Jetzt Bestellen</a></li>
+                    <li><a href="{{ url_for('covid') }}">FAQ Covid</a></li>
+                    <li><a href="{{ url_for('about') }}">Über Uns</a></li>
+                </ul>
+
+            </div>
+           <div class="col-lg-3 col-sm-6 col-md-6 mb-4 mb-xl-0 footer-widget">
+                <h4> Newsletter</h4>
+                <span style="color:white">Falls Sie Neuigkeiten von Uns erhalten möchten, können Sie sich für unseren Newsletter anmelden.</span>
+                <div class="form-wrap">
+                    <form>
+                        <div class="input-group">
+                            <input type="email"class="form-control" name="meil" id="meil" placeholder="Email Addresse">
+                            <div class="input-group-append">
+                                <button class="btn click-btn" type="submit">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+            <div class="footer-bottom row align-items-center text-center
+            text-lg-left no-gutters">
+            <p class="footer-text m-0 col-lg-8 col-md-12">
+                RestaurantOnline&copy;<script>document.write(new Date().getFullYear());</script>
+                Alle Rechte vorbehalten
+            </p>
+            <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="http://localhost:8000">Online</a>
+            </div>
+
+        
+        
+        </div>
+
+        </div>
+      </footer>

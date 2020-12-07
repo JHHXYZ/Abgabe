@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Restaurant Online</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="http://127.0.0.1:5000/">
+            <img class= logo src="../static/logi.png"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="{{ url_for('menu') }}">Menü</a></li>
+                    <li><a href="{{ url_for('contact') }}">Kontakt</a></li>
+                    <li><a href="{{ url_for('about') }}">Über Uns</a></li>
+                    <li><a href="{{ url_for('covid') }}">Covid</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="https://lexical-sol-294408.ew.r.appspot.com/">Jetzt bestellen</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="{{ url_for('menu') }}">Menü</a>
+                <a href="{{ url_for('contact') }}">Kontakt</a>
+                <a href="{{ url_for('about') }}">Über Uns</a>
+                <a href="{{ url_for('covid') }}">Covid</a>
+            </div>
+        </div>
+        <script>
+          const doc = document;
+          const menuOpen = doc.querySelector(".menu");
+          const menuClose = doc.querySelector(".close");
+          const overlay = doc.querySelector(".overlay");
+
+          menuOpen.addEventListener("click", () => {
+            overlay.classList.add("overlay--active");
+          });
+
+          menuClose.addEventListener("click", () => {
+            overlay.classList.remove("overlay--active");
+          });
+        </script>
+    </body>
+</html>

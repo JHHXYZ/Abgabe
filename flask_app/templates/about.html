@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
+
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1 class="header-h">Über Uns</h1>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h2 class="heading">vel illum qui dolorem eum</h2>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates quibusdam dicta!</h6>
+        </div>
+        </div>
+        </div>
+ </section>
+<div class="header">
+  <h2>Galerie</h2>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <img src="../static/hero4.jpg" style="width:100%">
+    <img src="../static/a.jpg" style="width:100%">
+    <img src="../static/f.jpg" style="width:100%">
+    <img src="../static/hero2.jpg" style="width:100%">
+    <img src="../static/hero1.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../static/b.jpg" style="width:100%">
+    <img src="../static/d.jpg" style="width:100%">
+    <img src="../static/hero1.jpg" style="width:100%">
+    <img src="../static/e.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="../static/a.jpg" style="width:100%">
+    <img src="../static/hero3.jpg" style="width:100%">
+    <img src="../static/d.jpg" style="width:100%">
+    <img src="../static/b.jpg" style="width:100%">
+    <img src="../static/hero2.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../static/e.jpg" style="width:100%">
+    <img src="../static/hero2.jpg" style="width:100%">
+    <img src="../static/c.jpg" style="width:100%">
+    <img src="../static/f.jpg" style="width:100%">
+    <img src="../static/d.jpg" style="width:100%">
+  </div>
+</div>
+</body>
+</html>
+
+{% endblock content %}
